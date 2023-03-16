@@ -2,11 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sample Responsive Website</title>
+    <style>
+        header, footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            background-color: #F3F3F3;
+            flex-wrap: wrap;
+        }
+        header nav a {
+            margin-left: 1rem;
+        }
+        .logo-placeholder {
+            width: 100px;
+            height: 40px;
+            background-color: #ccc;
+        }
+        .body-section {
+            margin: 2rem;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+        }
+        @media (max-width: 767px) {
+            header nav {
+                order: -1;
+                width: 100%;
+                text-align: center;
+            }
+            header nav a {
+                display: inline-block;
+                margin-left: 0;
+                margin-right: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <div class="logo-placeholder"></div>
+        <nav>
+            <a href="#blog">Blog</a>
+            <a href="#placeholder">Placeholder</a>
+            <a href="#contact-us">Contact Us</a>
+        </nav>
+    </header>
+    <div class="body-section">
+        <h1>Main Header</h1>
+        <a href="#" class="cta-button">CTA Button</a>
+        <div class="image-placeholder" style="width:300px;height:200px;background-color:#ccc;"></div>
+    </div>
+    <div class="body-section">
+        <h2>Random Catchphrase</h2>
+        <a href="#" class="cta-button">CTA Button</a>
+    </div>
+    <footer>
+        <p>Rebecca, Junaid, Izzi, Steyn, Nicole,</p>
+        <p>the bestest designers at Luno</p>
+    </footer>
 </body>
 </html>
